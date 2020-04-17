@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" CONTENT="index, follow"/>
+    <meta name="description"
+          content="Sander Volbeda wrote this article for NU.nl so they can improve their website even more, read more about how in this article.">
+    <title>5 Tips to Improve NU.nl | Sander Volbeda</title>
+
+    <link rel="shortcut icon" type="image/png" href="../../images/favicon.png"/>
+
+    <!--build:css css/styles.min.css-->
+    <!-- <link rel="stylesheet" href="../../css/styles.css"> -->
+    <!--endbuild-->
+
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/aos.css">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Poppins:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76609826-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-76609826-1', { 'anonymize_ip': true });
+          </script>
+
+<body>
+<header class="header">
+    <div class="main-menu">
+        <a href="/" class="logo">
+            <img src="../../images/logo-sv-black.svg" data-aos="zoom-in" data-aos-duration="1000"  alt="Logo">
+        </a>
+        <div class="menu">
+            <ul>
+                <li><a href="https://sandervolbeda.com/about.html">About</a></li>
+                <li><a href="https://medium.com/@sandervolbeda" target="_blank" rel="nofollow noreferrer" class="active">Blog</a></li>
+                <li><a href="https://sandervolbeda.com/books.html">Books</a></li>
+                <li><a href="https://sandervolbeda.com/work.html">Work</a></li>
+                <li><a href="work/case-studies/jobsite-personalization.html">Case studies</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="wrapper">
+        <section class="hero alt">
+            <h1>5 Tips to Improve NU.nl</h1>
+            <p>When I was scrolling through LinkedIn I came across this message from Lucia, the CRO Specialist of NU.nl. You asked for feedback since they did some significant improvements which I like a lot, anyway, challenge accepted!</p>
+            <span class="break"></span>
+        </section>
+        <section class="content">
+            <!-- Tip 1 -->
+            <div class="area">
+                <h2>Tip 1: The welcome pop-up</h2>
+                 <p>The first thing I noticed when I tried to go to the website was the pop-up that jumped on my screen. Adding the pop-up is smart, but what I noticed was that the next and close button wasn’t visible on my screen (MacBook Pro 13 inch).</p>
+            </div>
+
+            <!-- Tip 2 -->
+            <div class="area">
+                <h2>Tip 2: Define the Problem (Bug)</h2>
+                <p>The line-height of the text is 1.7, while 1.5 would feel better and more natural. Now it’s almost like reading two different sentences. With this small adjustment that will be fixed. In the image below you can see the difference, in the first news title it’s 1.5 and in the second is 1.7 (changed it with developers tools to check how it would look like).</p>
+            </div>
+
+            <!-- Tip 3 -->
+            <div class="area">
+                <h2>Tip 3: Labeling news items</h2>
+                <p>I’m a heavy user of the NU.nl app on my iPhone. I really on the live blogs of the formula 1 a lot when I don’t have the time to watch it. In the app, liveblog is more of a label and stands out more. The background is red and the text white. This helps me to scan what articles I would like to read and which don’t. For example, you want to know if an article contains a podcast, you might not be interested in these so you don’t want to click the article.</p>
+            </div>
+
+            <!-- Tip 4 -->
+            <div class="area">
+                <h2>Tip 4: Improving Secondary Menu</h2>
+                <p>There is the main menu when you select one of the categories a new secondary menu will appear. The font size of the secondary menu is bigger, a choice I support. Only people might get lost since they don’t know where they are anymore. The active status of the selected category is not very visible, consider your users being colourblind then the active state is even more terrible.</p>
+                <p>This could be easily fixed by adding the menu item All to the secondary menu. You would get something like ... All | Category-1 Category-2 Category-3 etc. Then you can make the newly added menu item bold and maybe underlined to show it’s currently active in the secondary menu.</p>            
+            </div>
+
+            <!-- Tip 5 -->
+            <div class="area">
+                <h2>Tip 5: </h2>
+                <p>The fifth tip I have is to add padding around the link ‘Meer Media en Cultuur’. The padding is part of the link and also clickable. This makes it easier to click on the link since some space around it is also clickable. This way you can’t misclick, the same principle can be applied for mobile. Why would you do think? Think of different audiences like elderly people for example.</p>
+            </div>
+
+            <!-- Final Words -->
+            <div class="area">
+                <h2>Final words</h2>
+                <p>Love it that Lucia the CRO specialist is actively asking feedback on how she could improve NU.nl even more.</p>
+                <p>If you have any questions feel free to hit me up on <a href="https://linkedin.com/in/sandervolbeda" rel="nofollow" target="_blank">LinkedIn</a>. I’m a UX/UI/CRO specialist working remotely from the Netherlands.</p>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="call-to-action" data-aos="fade-up" data-aos-duration="1000">
+        <span class="break"></span>
+        <h3>Ready to talk?</h3>
+        <a class="mail effect alt" href="mailto:hello@sandervolbeda.com?SUBJECT=Ready%20to%20talk" rel="nofollow">hello@sandervolbeda.com</a>
+        <span class="break"></span>
+    </div>
+    <div class="list">
+        <div class="footer-menu alt">
+            <a href="index.html" class="logo">
+                <img src="../../images/logo-sv-white.svg" alt="Logo">
+            </a>
+            <div class="menu">
+                <ul class="row">
+                    <li><a href="https://www.instagram.com/sandervolbeda/" class="alt" rel="nofollow noreferrer" target="_blank"><span
+                            class="text">Instagram</span><span class="icon"><i class="fab fa-instagram"></i></span></a>
+                    </li>
+                    <li><a href="https://medium.com/@sandervolbeda" class="alt" rel="nofollow noreferrer" target="_blank"><span
+                            class="text">Medium</span><span class="icon"><i class="fab fa-medium-m"></i></span></a></li>
+                    <li><a href="https://github.com/sandervolbeda" class="alt" rel="nofollow noreferrer" target="_blank"><span
+                            class="text">Github</span><span class="icon"><i class="fab fa-github"></i></span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCF1tV_JLodAJyxQsGnJ1Pww?view_as=subscriber"
+                           class="alt" rel="nofollow noreferrer" target="_blank"><span class="text">YouTube</span><span class="icon"><i
+                            class="fab fa-youtube"></i></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--build:js js/main.min.js -->
+<script src="../../js/main.min.js"></script>
+<!-- endbuild -->
+
+<!--Start animation library-->
+<script src="../../js/lib/aos.js"></script>
+<script>AOS.init();</script>
+<!--end animation library-->
+
+<!-- Service worker -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
+</script>
+</body>
+
+</html>
