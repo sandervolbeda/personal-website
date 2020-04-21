@@ -499,6 +499,29 @@ section.content .large-image {
     width: 100%;
     height: auto; }
 
+section.content .images-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  section.content .images-2 img {
+    margin-bottom: 16px;
+    width: 100%; }
+
+@media screen and (min-width: 800px) {
+  section.content .images-2 {
+    flex-direction: row;
+    justify-content: space-between; }
+    section.content .images-2 img {
+      max-width: 335px;
+      margin-bottom: 0; } }
+
+section.content span.image-source {
+  font-size: 12px;
+  margin-top: 8px;
+  margin-bottom: 40px;
+  display: block;
+  width: 100%; }
+
 section.work-list {
   display: none; }
   @media screen and (min-width: 550px) {
