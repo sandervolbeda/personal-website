@@ -17,7 +17,4 @@ When you've updated your website and want to publish the changes, this is what y
 This will automatically build the production ready version of your website in the `dist` folder.
 
 ### 2. Push your changes to master
-This will make sure all your new changes are safe.
-
-### 3. Deploy your static website
-You deploy your changes to your GitHub Pages website using `npm run deploy`. This will automatically deploy the changes to the `gh-pages` branch.
+Pushing to the master branch will trigger a GitHub action which deploys your website automatically.
