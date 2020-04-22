@@ -1,0 +1,51 @@
+.container-items {
+  .item {
+    text-align: center;
+
+    .name {
+      font-size: 21px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .career {
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    .container-info {
+      background: $grey;
+      padding-bottom: 16px;
+      text-align: left;
+
+      p {
+        font-size: 14px;
+        margin: 0;
+      }
+
+      .photo {
+        height: 200px;
+        overflow: hidden;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: 700px) {
+          height: 130px;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .type, .age, .focus, .from {
+        margin-bottom: 12px;
+        padding: 0 16px;
+      }
+
+      .looking-for {
+        padding: 0 16px;
+      }
+    }
+  }
+}

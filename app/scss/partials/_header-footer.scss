@@ -1,0 +1,137 @@
+.header, .footer {
+  display: flex;
+  justify-content: center;
+  transition: background .2s ease-in-out;
+  align-items: center;
+  padding: 0 24px;
+  font-family: $font-family-headings;
+}
+
+.header {
+  background: rgba(248, 248, 248, 0);
+  padding: 0 0 0 24px;
+
+  @media screen and (min-width: 550px) {
+    height: 80px;
+    padding: 0 24px;
+
+    &:hover {
+      background: rgba(248, 248, 248, 1);
+    }
+  }
+}
+
+.footer {
+  flex-direction: column;
+  background: $black;
+  color: white;
+  min-height: 200px;
+
+  .list{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 0 24px;
+    transition: background .2s ease-in-out;
+
+    &:hover {
+      background: rgba(24, 24, 24,1);
+    }
+
+    .footer-menu {
+      align-items: center;
+
+      a {
+        &.logo {
+          padding: 0;
+        }
+      }
+
+      .menu {
+        padding-top: 0;
+      }
+    }
+
+    a {
+      &.alt {
+        padding: 12px;
+
+        @media screen and (min-width: 350px) {
+          padding: 16px;
+        }
+
+        @media screen and (min-width: 650px) {
+          padding: 8px;
+          margin: 16px;
+        }
+
+        span {
+          &.text {
+            display: none;
+
+            @media screen and (min-width: 650px) {
+              display: block;
+            }
+          }
+
+          &.icon {
+            display: block;
+
+            @media screen and (min-width: 650px) {
+              display: none;
+            }
+
+            i {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .call-to-action {
+    width: 100%;
+    max-width: 700px;
+    padding: 64px 24px;
+
+    @media screen and (min-width: 550px) {
+      padding: 120px 0;
+    }
+
+    @media screen and (min-width: 1400px) {
+      max-width: 800px;
+    }
+
+    span {
+      &.break {
+        display: block;
+        height: 1px;
+        background: $white;
+        width: 100%;
+
+        &:first-child {
+          margin-bottom: 48px;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 7vw;
+      margin-bottom: 12px;
+
+      @media screen and (min-width: 700px) {
+        font-size: 52px;
+      }
+    }
+
+    a {
+      &.mail {
+        color: $white;
+        margin-bottom: 48px;
+        display: inline-block;
+      }
+    }
+  }
+}

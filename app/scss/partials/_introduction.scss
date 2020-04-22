@@ -1,0 +1,27 @@
+section {
+  &.introduction {
+    .case-study {
+      background: #f6f6f6;
+      padding: 24px;
+      display: flex;
+      flex-direction: row;
+
+      .image {
+        width: 40%;
+        margin-right: 24px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .excerpt {
+        width: 60%;
+        p {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

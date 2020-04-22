@@ -1,0 +1,38 @@
+section {
+  &.work-list {
+    display: none;
+
+    @media screen and (min-width: 550px) {
+      display: block;
+      margin-bottom: 120px;
+    }
+
+    ul {
+      &.images {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          max-height: 50px;
+          width: auto;
+          padding: 0;
+
+          img {
+            max-width: 100px;
+            max-height: 50px;
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

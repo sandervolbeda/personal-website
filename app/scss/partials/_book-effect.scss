@@ -1,0 +1,87 @@
+
+.book {
+display: inline-flex;
+width: 200px;
+height: 300px;
+margin: 0 24px 40px 0;
+padding: 0;
+background: #333;
+transform: translate3d(0,0,0);
+
+  a {
+    border-bottom: 1px solid #8a8a8a;
+
+    &:after {
+      border: none;
+    }
+  }
+}
+
+.book ul {
+display: block;
+position: relative;
+width: 200px;
+height: 300px;
+margin: 0;
+padding: 0;
+list-style: none;
+//perspective-origin: 0 50% 0;
+perspective-origin: 0 50%;
+perspective: 800px;
+-webkit-transform: translate3d(0,0,0);
+}
+
+.book ul>li {
+display: block;
+position: absolute;
+left: 0;
+top: 0;
+width: 200px;
+height: 300px;
+padding: 0;
+margin: 0;
+//background-color: #000000; // Old browsers
+background: linear-gradient(to right,  #ffffff 0%, #000000 20%, #000000 90%,#ededed 100%);
+transform-origin: 0 50% 0;
+transform-style: preserve-3d;
+transition: all .5s cubic-bezier(0.25,1,.25,1);
+}
+
+.cover {
+ z-index: 2 !important;
+display: block;
+ width: 200px; height: 300px;
+ background:#333 !important;
+transform: rotateY(0deg) translateZ(0px);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+}
+.page1 {
+display: none;
+transform: rotateY(20deg) translateZ(-1px);
+}
+.page2 {
+display: none;
+transform: rotateY(30deg) translateZ(-2px);
+}
+.page3 {
+display: none;
+transform: rotateY(40deg) translateZ(-3px);
+}
+
+
+
+.book:hover .page1 {
+transform: rotateY(-34deg);
+}
+
+.book:hover .page2 {
+transform: rotateY(-27deg);
+}
+
+.book:hover .page3 {
+transform: rotateY(-15deg);
+}
+
+.book:hover .cover {
+transform: rotateY(-40deg);
+}

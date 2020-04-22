@@ -1,0 +1,62 @@
+.container-scenario {
+  padding: 8px;
+  border: 2px dashed $black;
+  opacity: .3;
+
+  &.focus {
+    opacity: 1;
+  }
+
+  .scenario {
+    background: $grey;
+    padding: 24px;
+
+    h3 {
+      margin: 0 0 24px 0;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .compare {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 24px;
+
+      ul {
+        &.first, &.second {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+
+          li {
+            margin-bottom: 8px;
+          }
+        }
+
+        &.second {
+          li {
+            i {
+              &.fa-check {
+                color: $green;
+              }
+
+              &.fa-times {
+                color: $red;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .action {
+      background: $black;
+      color: $white;
+      padding: 12px;
+      font-family: $font-family-headings;
+    }
+  }
+}

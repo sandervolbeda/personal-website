@@ -1,0 +1,218 @@
+$black: rgba(34, 34, 34, 1);
+$white: rgba(255, 255, 255, 1);
+$grey: rgba(246, 246, 246, 1);
+$green: rgba(0, 171, 0, 1);
+$red: rgba(189, 0, 0, 1);
+
+$font-family-headings: 'Poppins', sans-serif;;
+$font-family: 'PT Serif', serif;;
+
+@keyframes strike {
+  0%     { transform-origin:  0% 50%;transform:scaleX(0); }
+  50%    { transform-origin:  0% 50%;transform:scaleX(1);  }
+  50.01% { transform-origin:100% 50%;transform:scaleX(1);  }
+  100%   { transform-origin:100% 50%;transform:scaleX(0);  }
+}
+
+@-webkit-keyframes strike {
+  0% {
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0); }
+  50% {
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  50.01% {
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  100% {
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0); } }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  color: $black;
+  overflow-x: hidden;
+
+  main {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0 24px;
+    margin-bottom: 80px;
+    min-height: 100vh;
+
+    .wrapper {
+      max-width: 700px;
+      width: 100%;
+
+      @media screen and (min-width: 1400px) {
+        max-width: 800px;
+      }
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 0;
+    font-family: $font-family-headings;
+  }
+
+  h1 {
+    font-size: 9vw;
+    line-height: 1.1;
+
+    @media screen and (min-width: 700px) {
+      font-size: 64px;
+    }
+
+    @media screen and (min-width: 1400px) {
+      font-size: 80px;
+    }
+  }
+
+  h2 {
+    font-size: 32px;
+    margin: 40px 0 8px 0;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin: 32px 0 8px 0;
+    font-weight: 600;
+  }
+
+  p {
+    line-height: 1.5;
+
+    @media screen and (min-width: 1400px) {
+      font-size: 21px;
+      line-height: 1.7;
+    }
+  }
+
+  span {
+    &.weight {
+      font-weight: 700;
+    }
+
+    &.emphasis {
+      font-style: italic;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $black;
+    transition: color .2s ease-in-out;
+    position: relative;
+
+    &:after {
+      content: '';
+       width: 100%;
+       position: absolute;
+       left: 0;
+       bottom: -2px;
+
+       border-width: 0 0 1px;
+       border-style: solid;
+       border-color: $black;
+       transition: color .2s ease-in-out;
+    }
+
+    &:hover {
+      color: rgba($black, .75);
+
+      &:after {
+        border-color: rgba($black, .75);
+      }
+    }
+
+    &.effect {
+      @keyframes strike {
+        0%     { transform-origin:  0% 50%;transform:scaleX(0); }
+        50%    { transform-origin:  0% 50%;transform:scaleX(1);  }
+        50.01% { transform-origin:100% 50%;transform:scaleX(1);  }
+        100%   { transform-origin:100% 50%;transform:scaleX(0);  }
+      }
+
+      &.alt {
+        &:hover {
+          color: rgba($white, .75);
+
+          &:after {
+            background: $white;
+          }
+        }
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: rgba($black, .75);
+
+        &:after {
+          content: ' ';
+          position: absolute;
+          top: 50%;
+          height: 2px;
+          background: $black;
+          animation: strike .75s ease-in-out forwards;
+          left: -8px;
+          width: calc(100% + 16px);
+        }
+      }
+    }
+
+    &.btn {
+      border: 3px solid $black;
+      background: transparent;
+      overflow: hidden;
+      width: auto;
+      outline: none;
+      display: inline-block;
+      transition: all .3s ease-in-out;
+      font-family: $font-family-headings;
+
+      &:hover {
+        background: $black;
+        color: $white;
+
+        span {
+          color: $white;
+        }
+      }
+
+      &:after, &:before {
+        border: none;
+        box-sizing: border-box;
+        margin: 0; padding: 0;
+      }
+
+      span {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        color: $black;
+
+        display: block;
+        user-select: none;
+        position: relative;
+        overflow: hidden;
+        padding: 8px 18px;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

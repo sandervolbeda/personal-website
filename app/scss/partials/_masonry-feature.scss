@@ -1,0 +1,39 @@
+#masonry {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vw;
+  max-height: 800px;
+  max-width: 600px;
+  font-size: 0;
+
+  img {
+    width: 25%;
+    transition: .8s opacity;
+    margin: 12px;
+
+    @media screen and (min-width: 695px) {
+      width: 33.3%;
+    }
+  }
+
+  &:hover {
+    img {
+      opacity: .3;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+/* fallback for earlier versions of Firefox */
+@supports not (flex-wrap: wrap) {
+  div#masonry { display: block; }
+  div#masonry img {
+  display: inline-block;
+  vertical-align: top;
+  }
+}

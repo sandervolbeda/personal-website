@@ -1,0 +1,16 @@
+// Always load the general first
+@import "partials/general";
+
+// The rest below here
+@import "partials/header-footer";
+@import "partials/main-menu";
+@import "partials/hero";
+@import "partials/introduction";
+@import "partials/content";
+@import "partials/list";
+@import "partials/book-effect";
+@import "partials/masonry-feature";
+
+// Case studies
+@import "partials/case-studies/personas";
+@import "partials/case-studies/scenarios";
