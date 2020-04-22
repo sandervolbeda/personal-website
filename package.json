@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "node ./node_modules/husky/lib/installer/bin install"
+    "postinstall": "node ./node_modules/husky/lib/installer/bin install",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +18,6 @@
     "gulp-cache": "^0.4.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.0",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-jshint": "^2.1.0",
@@ -27,10 +27,10 @@
     "gulp-sourcemaps": "^1.12.1",
     "gulp-uglify-es": "^1.0.4",
     "gulp-useref": "^3.1.6",
+    "gulp4-run-sequence": "^1.0.0",
     "husky": "^4.2.5",
     "jshint": "^2.11.0",
     "jshint-stylish": "^2.2.1",
-    "gulp4-run-sequence": "^1.0.0",
     "sw-precache": "^5.2.1"
   },
   "dependencies": {
@@ -39,7 +39,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "gulp build",
-      "pre-push": "gulp deploy"
+      "pre-push": "npm run deploy"
     }
   }
 }

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" CONTENT="index, follow"/>
+    <meta name="description"
+          content="Sander Volbeda wrote this blog about how to Prioritize Your Bug Requests by Helping the Development Team, read more about how in this article.">
+    <title>Prioritize Your Bug Requests by Helping the Development Team | Sander Volbeda</title>
+
+    <link rel="shortcut icon" type="image/png" href="../../images/favicon.png"/>
+
+    <!--build:css css/styles.min.css-->
+    <!-- <link rel="stylesheet" href="../../css/styles.css"> -->
+    <!--endbuild-->
+
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/aos.css">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Poppins:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76609826-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-76609826-1', { 'anonymize_ip': true });
+          </script>
+
+<body>
+<header class="header">
+    <div class="main-menu">
+        <a href="/" class="logo">
+            <img src="../../images/logo-sv-black.svg" data-aos="zoom-in" data-aos-duration="1000"  alt="Logo">
+        </a>
+        <div class="menu">
+            <ul>
+                <li><a href="https://sandervolbeda.com/about.html">About</a></li>
+                <li><a href="https://medium.com/@sandervolbeda" target="_blank" rel="nofollow noreferrer" class="active">Blog</a></li>
+                <li><a href="https://sandervolbeda.com/books.html">Books</a></li>
+                <li><a href="https://sandervolbeda.com/work.html">Work</a></li>
+                <li><a href="work/case-studies/jobsite-personalization.html">Case studies</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="wrapper">
+        <section class="hero alt">
+            <h1>Prioritize Your Bug Requests by Helping the Development Team</h1>
+            <p>Have you ever worked at a company with an in-house development team? Then you know developers are always busy and have a ton of work on their backlog. That’s something that won’t change in the upcoming years, unfortunately.</p>
+            <p>In this article, I share my thoughts on how we can make it as easy as possible for the development teams to understand our bug reports so that they are able to prioritize, plan and get more things done.</p>
+            <span class="break"></span>
+        </section>
+        <section class="content">
+            <!-- Step 1 -->
+            <div class="area">
+                <h2>Step 1: Understand the Product</h2>
+                <p>The first step is to understand the product. What is the product? A product is something that is created through a process and that provides benefits to a specific market. In our case, this could be a SaaS website or e-commerce platform for example.</p>
+                <p>Within the product you have a core, it’s the basic part that the product can’t function without. Take Uber, for example, one of the features they have is that you can see where the Uber driver is. What happens if that’s broken? The right answer is nothing, it’s a nice feature to have that builds on top of the core of the product. The core product of Uber is that you can get a driver from your specific location to somewhere else.</p> 
+                <p>Everything that’s broken but isn’t related to the core product has less priority than things that are broken and are needed to keep the product going. An example of such functionality can be payment options. If payment isn’t working, your users can’t do the payment and you don’t have revenue coming in. Your users can’t buy the thing they want so they’ll leave. You might never get them back from this point. This has a direct impact on the business.</p>
+                <p>In short, think about what the core of the product is and what isn’t. This way you can start prioritizing yourself before you even contact the product owner or the development team.</p>
+                <h3>Summary:</h3>
+                <ul>
+                  <li>Write down what the core of the product is</li>
+                  <li>Bugs that break the core of the product have the highest priority</li>
+                  <li>Bugs that don’t affect the core of the product have less priority</li>
+                </ul>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="area">
+                <h2>Step 2: Define the Problem (Bug)</h2>
+                <p>Now you’ve learned a little about the ‘product’. The next step is what you probably often already do. You want something from the development. Let’s start with defining the problem and what the development team needs in order to reproduce the bug so they can fix it.</p>
+                <p>The first step for writing down the bug you’ve found. Do this as clearly and detailed as possible including date, time, browser, device and the URL. </p>
+                <h3>Checklist:</h3>
+                <ul>
+                    <li>Explaining the problem</li>
+                    <li>Date & Time</li>
+                    <li>Browser (and size if it’s not full screen)</li>
+                    <li>Device</li>
+                    <li>URL</li>
+                    <li>Input (optional)</li>
+                    <li>Screenshot (if possible)</li>
+                </ul>
+                <p>For example, I’ve found that the search form on our homepage isn’t working anymore. The form itself isn’t the problem but something goes wrong when I try to submit the search. I tried this on 23-03-2020 in the Chrome browser on a mobile device. This is the URL of the page: theurlhere.com. My input was the date 04-04-2020 to 06-04-2020, after selecting these days I’ve submitted the form.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="area">
+                <h2>Step 3: Research</h2>
+                <p>You’ve written down the problem, now it’s time to research the bug. This is important because it saves development time. For example, check if this problem occurs on other pages and other domains (if you have multiple). Does this always happen, in all browsers? Have you tried incognito modus or a browser that you don’t use often? Did you deactivate all ad blockers?</p>
+                <p>Besides answering the questions I mentioned you could also clarify the problem with data from Google Analytics, for example. This way you can find out the impact of the problem and define the priority. Even if the impact on the core of the product isn’t that big (highest priority) you still have lowest to high priority available to choose from. If data indicates you’re missing a lot of revenue because an upsell is broken you could give this bug high priority instead of highest.</p>
+                <p>Add the findings to your case after writing down the problem. Things like these save time for the development team since they don’t have to check and research the bug extensively anymore.</p>
+                <p>Not sure what to research? Contact the UX Designer or Product Owner in your company so they can help you out.</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="area">
+                <h2>Step 4: Define Solution (if possible)</h2>
+                <p>Not everybody is technical and that’s fine! If you can find a solution or multiple solutions for the bug already it’s nice to mention these. A really black and white solution could be to remove the functionality completely until the bug is fixed or add extra text to the place that contains the bug so users have a workaround.</p>
+                <p>Keep in mind that the development team needs time to fix bugs as well, it might in some occasions even take days before a solution can be found and added to the website. You could give them a temporary solution like for example remove a certain input field from the contact form until it’s fixed.</p>
+            </div>
+
+            <!-- Example -->
+            <div class="area">
+                <h2>Example bug request</h2>
+                <h3>Problem</h3>
+                <p>The PayPal payment option in the shopping cart checkout isn’t working anymore on 08-04-2020 around 12:19. The browser I’ve been using is Chrome on my mobile phone. This is the URL {URL HERE} to the page: and I was trying to buy the new book called Rework.</p>
+                
+                <h3>Research</h3>
+                <p>I’ve checked other items that can be bought on our website and this bug occurs there as well. The other payment options seem to be working. I’ve used different browsers like Firefox and Safari to check the bug and I’ve also tried incognito mode. I couldn’t find anything on Google related to the PayPal payment option being offline at this moment.</p>
+                <p>In Google Analytics I found that this bug occurs since 07-04-2020 since no more PayPal payments came in. PayPal is our number 2 most used payment option.</p>
+            
+                <h3>Solution</h3>
+                <p>It’s important that this payment option is fixed as soon as possible since it’s our second most used payment option. Until it’s fixed it would be better for the user experience to remove the PayPal payment option so our new users don’t know we have this payment option, they will probably choose another one.</p>
+                <p><b>Priority:</b> Highest</p>
+            </div>
+
+            <!-- Final Words -->
+            <div class="area">
+                <h2>Final words</h2>
+                <p>Reporting a bug can be time-consuming, but it has to be done in order to get the development team working on the most important things for the business. Many people don’t understand how the SCRUM/development team is working so I hope this article gave you some clearance on that.</p>
+                <p>If you have any questions feel free to drop a comment or hit me up on <a href="https://linkedin.com/in/sandervolbeda" rel="nofollow" target="_blank">LinkedIn</a>. I’m a UX/UI/CRO specialist working remotely from the Netherlands.</p>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="call-to-action" data-aos="fade-up" data-aos-duration="1000">
+        <span class="break"></span>
+        <h3>Ready to talk?</h3>
+        <a class="mail effect alt" href="mailto:hello@sandervolbeda.com?SUBJECT=Ready%20to%20talk" rel="nofollow">hello@sandervolbeda.com</a>
+        <span class="break"></span>
+    </div>
+    <div class="list">
+        <div class="footer-menu alt">
+            <a href="index.html" class="logo">
+                <img src="../../images/logo-sv-white.svg" alt="Logo">
+            </a>
+            <div class="menu">
+                <ul class="row">
+                    <li><a href="https://www.instagram.com/sandervolbeda/" class="alt" rel="nofollow noreferrer" target="_blank"><span
+                            class="text">Instagram</span><span class="icon"><i class="fab fa-instagram"></i></span></a>
+                    </li>
+                    <li><a href="https://medium.com/@sandervolbeda" class="alt" rel="nofollow noreferrer" target="_blank"><span
+                            class="text">Medium</span><span class="icon"><i class="fab fa-medium-m"></i></span></a></li>
+                    <li><a href="https://github.com/sandervolbeda" class="alt" rel="nofollow noreferrer" target="_blank"><span
+                            class="text">Github</span><span class="icon"><i class="fab fa-github"></i></span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCF1tV_JLodAJyxQsGnJ1Pww?view_as=subscriber"
+                           class="alt" rel="nofollow noreferrer" target="_blank"><span class="text">YouTube</span><span class="icon"><i
+                            class="fab fa-youtube"></i></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--build:js js/main.min.js -->
+<script src="../../js/main.min.js"></script>
+<!-- endbuild -->
+
+<!--Start animation library-->
+<script src="../../js/lib/aos.js"></script>
+<script>AOS.init();</script>
+<!--end animation library-->
+
+<!-- Service worker -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
+</script>
+</body>
+
+</html>

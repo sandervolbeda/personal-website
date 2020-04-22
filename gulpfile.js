@@ -13,8 +13,7 @@ const gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
-    plumber = require('gulp-plumber'),
-    ghPages = require('gulp-gh-pages');
+    plumber = require('gulp-plumber');
 
 const serviceWorkerConfig = {
     environment: 'development',
@@ -59,11 +58,6 @@ gulp.task('generate-service-worker', function (callback) {
             }
         ]
     }, callback);
-});
-
-gulp.task('deploy', function() {
-    return gulp.src('./dist/**/*')
-        .pipe(ghPages());
 });
 
 // Development Tasks
