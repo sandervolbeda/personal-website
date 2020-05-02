@@ -106,9 +106,9 @@ gulp.task('copy-files', function(done) {
 
 // Watchers
 gulp.task('watch', function () {
-    gulp.watch('app/scss/**/*.scss', ['sass']);
-    gulp.watch('app/*.html', browserSync.reload);
-    gulp.watch('app/js/**/*.js', ['site-js']);
+    gulp.watch('app/scss/**/*.scss', gulp.series('sass'));
+    gulp.watch('app/*.html', gulp.series(browserSync.reload));
+    gulp.watch('app/js/**/*.js', gulp.series('site-js'));
 });
 
 // JSHint, concat, and minify JavaScript
