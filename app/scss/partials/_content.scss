@@ -68,12 +68,6 @@ section {
     }
 
     ul {
-      font-size: 21px;
-
-      li {
-        margin-bottom: 12px;
-      }
-
       &.images {
         display: flex;
         flex-wrap: wrap;
@@ -118,8 +112,6 @@ section {
               &:after {
                 border: none;
               }
-
-
             }
           }
         }
@@ -130,10 +122,6 @@ section {
         //list-style-type: decimal;
         font-size: 16px;
         margin-top: 0;
-
-        @media screen and (min-width: 1400px) {
-          font-size: 18px;
-        }
 
         li {
           margin-bottom: 12px;
@@ -169,7 +157,7 @@ section {
         img {
           max-width: 335px;
           margin-bottom: 0;
-        }
+        } 
       }
     }
 

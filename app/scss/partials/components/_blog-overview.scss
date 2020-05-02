@@ -1,0 +1,219 @@
+section.blog-items {
+    position: relative;
+    padding: 48px 0;
+
+    h2 {
+      margin: 0 0 40px 0;
+    }
+
+    .container-blog-items {
+      .container-blog {
+        position: relative;
+        margin-bottom: 32px;
+        padding-bottom: 20px;
+
+        @media screen and (min-width: 600px) {
+          max-width: none;
+        }
+
+        &.even {
+          @media screen and (min-width: 800px) {
+            margin-left: 24px;
+            width: 100%;
+          }
+        }
+
+        .date-time {
+          color: darkgrey;
+          position: absolute;
+          left: 16px;
+          bottom: 0;
+          font-size: 10px;
+        }
+
+        .inner-container-blog {
+          display: flex;
+          flex-direction: column;
+          height: auto;
+          max-width: 815px;
+          width: 100%;
+          border: 1px solid #eaeced;
+          transition: all .3s ease-in-out;
+          //overflow: hidden;
+          background: white;
+
+          @media screen and (min-width: 600px) {
+            height: 190px;
+            overflow: hidden;
+            flex-direction: row;
+          }
+
+          &:hover {
+            box-shadow: 0 8px 12px rgba(12,0,46,0.1);
+          }
+
+          a {
+            text-decoration: none;
+          }
+
+          .blog-image {
+            position: relative;
+            display: none;
+
+            @media screen and (min-width: 700px) {
+              display: block;
+            }
+
+            img {
+            //   width: 260px;
+            //   height: auto;
+
+              width: 260px;
+              height: 190px
+            }
+
+            .blog-information {
+              position: absolute;
+              z-index: 2;
+              left: 0;
+              top: 0;
+              font-size: 12px;
+              color: $black;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+
+              .category-label {
+                background: $black;
+                font-size: 12px;
+                color: white;
+                padding: 8px 16px;
+
+                a {
+                  &.white {
+                    color: $white;
+
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .blog-content {
+            position: relative;
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            box-sizing: border-box;
+
+            @media screen and (min-width: 400px) {
+              padding: 50px;
+            }
+
+            @media screen and (min-width: 700px) {
+              padding: 0 50px;
+            }
+
+            a {
+              &.url-overlay {
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                display: block;
+              }
+            }
+
+            h3, h4 {
+              position: relative;
+              z-index: 2;
+              color: $black;
+            }
+
+            h3 {
+              font-size: 20px;
+              margin: 0;
+              line-height: 1.4;
+              margin: 0 0 6px 0;
+
+              &:hover {
+                text-decoration: underline;
+              }
+
+              a {
+                &:hover {
+                  color: $black;
+                }
+              }
+            }
+
+            h4 {
+              font-size: 14px;
+              font-weight: 400;
+              margin: 0;
+
+              a {
+                color: darkgrey;
+              }
+            }
+
+            a {
+              &.read-blog {
+                position: absolute;
+                z-index: 2;
+                right: 0;
+                bottom: 0;
+                font-size: 12px;
+                padding: 16px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                @include standard-transition;
+                text-decoration: underline;
+
+                i {
+                  font-size: 10px;
+                  margin-left: 6px;
+                  text-decoration: none;
+                }
+
+                &:hover { 
+                  color: $primary;
+
+                  span {
+                    &.underline {
+                      text-decoration: underline;
+                    }
+                  }
+
+                  i {
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .background-column {
+      background-color: $grey;
+      width: 33%;
+      position: absolute;
+      left: 150px;
+      top: 0;
+      height: 100%;
+      display: block;
+      z-index: -1;
+    }
+  }

@@ -4,6 +4,9 @@ $grey: rgba(246, 246, 246, 1);
 $green: rgba(0, 171, 0, 1);
 $red: rgba(189, 0, 0, 1);
 
+$primary: rgba(89, 88, 241, 1);
+$secondary: rgba(251, 105, 112, 1); 
+
 $font-family-headings: 'Poppins', sans-serif;;
 $font-family: 'PT Serif', serif;;
 
@@ -100,6 +103,12 @@ body {
     }
   }
 
+  ul {
+    li {
+      margin-bottom: 12px; 
+    }
+  }
+
   span {
     &.weight {
       font-weight: 700;
@@ -116,25 +125,25 @@ body {
     transition: color .2s ease-in-out;
     position: relative;
 
-    &:after {
-      content: '';
-       width: 100%;
-       position: absolute;
-       left: 0;
-       bottom: -2px;
+    // &:after {
+    //   content: '';
+    //    width: 100%;
+    //    position: absolute;
+    //    left: 0;
+    //    bottom: -2px;
 
-       border-width: 0 0 1px;
-       border-style: solid;
-       border-color: $black;
-       transition: color .2s ease-in-out;
-    }
+    //    border-width: 0 0 1px;
+    //    border-style: solid;
+    //    border-color: $black;
+    //    transition: color .2s ease-in-out;
+    // }
 
     &:hover {
       color: rgba($black, .75);
 
-      &:after {
-        border-color: rgba($black, .75);
-      }
+      // &:after {
+      //   border-color: rgba($black, .75);
+      // }
     }
 
     &.effect {
