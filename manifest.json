@@ -1,0 +1,25 @@
+{
+  "name": "Sander Volbeda | Portfolio",
+  "short_name": "Sander",
+  "icons": [
+    {
+      "src": "/images/icons/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "description": "The portfolio website of UX and Product Designer Sander Volbeda",
+  "dir": "ltr",
+  "lang": "en",
+  "theme_color": "#FFFFFF",
+  "background_color": "#222222",
+  "display": "standalone",
+  "orientation": "natural",
+  "start_url": "/",
+  "categories": ["design", "products", "user experience"]
+}
