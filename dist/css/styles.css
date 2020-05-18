@@ -34,6 +34,9 @@
     -webkit-transform: scaleX(0);
     transform: scaleX(0); } }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0;
   padding: 0;
@@ -79,8 +82,11 @@ body {
       body p {
         font-size: 21px;
         line-height: 1.7; } }
-  body ul li {
-    margin-bottom: 12px; }
+  body ul, body ol {
+    margin-bottom: 40px;
+    margin-top: 12px; }
+    body ul li, body ol li {
+      margin-bottom: 12px; }
   body span.weight {
     font-weight: 700; }
   body span.emphasis {
@@ -153,6 +159,17 @@ body {
         padding: 8px 18px; }
         body a.btn span:hover {
           cursor: pointer; }
+  body table tr th {
+    text-align: left;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 4px;
+    min-width: 64px; }
+  body table tr td {
+    padding-bottom: 4px; }
+    body table tr td.small {
+      max-width: 64px;
+      text-align: center; }
 
 .header, .footer {
   display: flex;
