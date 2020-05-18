@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  max-width: 1920px;
+  max-width: 1920px; 
 
   a.logo {
     display: flex;
@@ -52,6 +52,7 @@
         display: inline-block;
 
         a {
+          text-decoration: none;
           padding: 16px 24px;
           color: $black;
           font-size: 12px;
