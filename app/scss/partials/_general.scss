@@ -39,6 +39,10 @@ $font-family: 'PT Serif', serif;;
     -webkit-transform: scaleX(0);
             transform: scaleX(0); } }
 
+html {
+  scroll-behavior: smooth; 
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -103,7 +107,10 @@ body {
     }
   }
 
-  ul {
+  ul, ol {
+    margin-bottom: 40px;
+    margin-top: 12px;
+
     li {
       margin-bottom: 12px; 
     }
@@ -220,6 +227,27 @@ body {
 
         &:hover{
           cursor: pointer;
+        }
+      }
+    }
+  }
+
+  table {
+    tr {
+      th {
+        text-align: left;
+        font-size: 18px;
+        font-family: $font-family-headings;
+        padding-bottom: 4px;
+        min-width: 64px;
+      }
+
+      td {
+        padding-bottom: 4px;
+
+        &.small {
+          max-width: 64px;
+          text-align: center;
         }
       }
     }
