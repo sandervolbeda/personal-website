@@ -302,6 +302,7 @@ body {
       .main-menu .menu ul li, .footer-menu .menu ul li {
         display: inline-block; }
         .main-menu .menu ul li a, .footer-menu .menu ul li a {
+          text-decoration: none;
           padding: 16px 24px;
           color: #222222;
           font-size: 12px;
