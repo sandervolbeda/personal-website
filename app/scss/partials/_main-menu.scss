@@ -52,7 +52,7 @@
         display: inline-block;
 
         a {
-          text-decoration: none;
+          text-decoration: none !important;
           padding: 16px 24px;
           color: $black;
           font-size: 12px;
