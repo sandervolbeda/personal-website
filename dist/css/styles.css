@@ -92,12 +92,14 @@ body {
   body span.emphasis {
     font-style: italic; }
   body a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #222222;
     transition: color .2s ease-in-out;
     position: relative; }
     body a:hover {
       color: rgba(34, 34, 34, 0.75); }
+    body a.effect {
+      text-decoration: none; }
 
 @keyframes strike {
   0% {
@@ -112,22 +114,22 @@ body {
   100% {
     transform-origin: 100% 50%;
     transform: scaleX(0); } }
-    body a.effect.alt:hover {
-      color: rgba(255, 255, 255, 0.75); }
-      body a.effect.alt:hover:after {
-        background: white; }
-    body a.effect:hover {
-      text-decoration: none;
-      color: rgba(34, 34, 34, 0.75); }
-      body a.effect:hover:after {
-        content: ' ';
-        position: absolute;
-        top: 50%;
-        height: 2px;
-        background: #222222;
-        animation: strike .75s ease-in-out forwards;
-        left: -8px;
-        width: calc(100% + 16px); }
+      body a.effect.alt:hover {
+        color: rgba(255, 255, 255, 0.75); }
+        body a.effect.alt:hover:after {
+          background: white; }
+      body a.effect:hover {
+        text-decoration: none;
+        color: rgba(34, 34, 34, 0.75); }
+        body a.effect:hover:after {
+          content: ' ';
+          position: absolute;
+          top: 50%;
+          height: 2px;
+          background: #222222;
+          animation: strike .75s ease-in-out forwards;
+          left: -8px;
+          width: calc(100% + 16px); }
     body a.btn {
       border: 3px solid #222222;
       background: transparent;
@@ -165,11 +167,14 @@ body {
     font-family: "Poppins", sans-serif;
     padding-bottom: 4px;
     min-width: 64px; }
+    body table tr th.small {
+      text-align: center; }
   body table tr td {
     padding-bottom: 4px; }
     body table tr td.small {
       max-width: 64px;
-      text-align: center; }
+      text-align: center;
+      font-family: "Poppins", sans-serif; }
 
 .header, .footer {
   display: flex;
